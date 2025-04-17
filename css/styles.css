@@ -447,17 +447,19 @@ padding-left: 0;
         max-width: 264px;
 }
 
-.footer-mail-btm {
-    display: flex;
-    gap: 24px;
+.footer-icons {
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 16px;
+}
+    
+.title-footer-icon {
+    color: #fff;
 }
 
-.footer-input {
-    background: #2e2f42;
-        width: 264px;
-        border-radius: 4px;
-        border: 1px solid #ffffff;
-        margin-top: 20px;
-    }
-
-    
+                        .footer-svg-icon {
+                            width: 24px;
+                            height: 24px;
+                            fill: #ffffff;
+                        }
