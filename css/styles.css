@@ -96,17 +96,22 @@ img {
     color: #404bbf;
 }
 
-.nav-link::after {
-    content: "";
-    width: 100%;
-    position: absolute;
-    left: 0;
-    bottom: -1px;
-    height: 4px;
-    background-color: #404bbf;
-    border-radius: 2px;
-
+.nav-link-active {
+    position: relative;
+        color: #404bbf;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.nav-link-active::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -1px;
+            height: 4px;
+            width: 100%;
+            background-color: #404bbf;
+            border-radius: 2px;
+        }
 
 .contacts {
     font-style: normal;
@@ -181,7 +186,7 @@ max-width: 1440px;
     display: block;
     border: none;
     cursor: pointer;
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button:hover,
@@ -351,7 +356,7 @@ padding-left: 0;
             display: flex;
             align-items: center;
             justify-content: center;
-            transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         }
 
 .icon-icon:hover,
@@ -405,7 +410,7 @@ padding-left: 0;
  .project-card {
      width: calc((100% - 48px) / 3);
      box-sizing: border-box;
-     
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
 
  .project-card:hover {
@@ -419,6 +424,19 @@ padding-left: 0;
 .portfolio-image {
     position: relative;
     overflow: hidden;
+}
+
+.portfolio-overlay {
+    position: absolute;
+    top: 0;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--white-color, #f4f4fd);
+    padding: 40px 32px;
+    background-color: #4d5ae5;
+    height: 100%;
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .project-info{
@@ -527,6 +545,7 @@ gap: 16px;
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-web:hover,
