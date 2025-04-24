@@ -143,6 +143,7 @@ img {
 
 .hero-section {
     background-color: #2e2f42;
+    margin: 0 auto;
     padding-top: 188px;
     padding-bottom: 188px;
 background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
@@ -518,7 +519,6 @@ padding-left: 0;
 }
 
 .footer-icons {
-display: flex;
 justify-content: center;
 align-items: center;
 gap: 16px;
